@@ -24,6 +24,17 @@ app.use("/order", orderRouter);
 app.use("/food-category", foodCategoryRouter);
 app.use("/authentication", authenticationRouter);
 
+
+app.get('/', (req,res) => {
+  res.send('hello world')
+
+
+
+})
+
 app.listen(PORT, () => {
   console.log(`API listeningggg on http://localhost:${PORT}`);
 });
+
+
+
